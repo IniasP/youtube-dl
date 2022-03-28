@@ -1,6 +1,9 @@
 # In this fork
 
-This fork adds an extractor for recording lectures from a https://livestream.kuleuven.be/ stream.
+This fork adds:
+
+- An extractor for recording lectures from a https://livestream.kuleuven.be/ stream.
+- The `ffmpeg-out-override` option to specify `ffmpeg` output arguments. This facilitates immediate transcoding/compression.
 
 # youtube-dl
 
@@ -241,8 +244,8 @@ Alternatively, refer to the [developer instructions](#developer-instructions) fo
                                          url,ffmpeg,httpie,wget
     --external-downloader-args ARGS      Give these arguments to the external
                                          downloader
-    --ffmpeg-out-override ARGS           Give these arguments to the ffmpeg
-                                         instead of `-c copy`
+    --ffmpeg-out-override ARGS           Give these arguments to ffmpeg after
+                                         the input instead of `-c copy`
 
 ## Filesystem Options:
     -a, --batch-file FILE                File containing URLs to download ('-'
